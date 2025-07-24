@@ -15,7 +15,7 @@ const projectsData = [
     title: "Medical History Vault with QR Code",
     description: "A secure healthcare web app that allows patients to manage medical records and share them with doctors via a unique, encrypted QR code. Features role-based access and AES encryption for data security.",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "JWT", "AES", "Cloudinary"],
-    image: "https://placehold.co/600x400.png",
+    image: "https://t4.ftcdn.net/jpg/05/62/18/39/360_F_562183905_aG7G4l33J5F6iFv1qC4fIO1aLA2E0vTd.jpg",
     imageHint: "healthcare security",
     liveLink: null,
     codeLink: "https://github.com/anurag9682",
@@ -25,7 +25,7 @@ const projectsData = [
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
-    image: "https://as2.ftcdn.net/v2/jpg/07/78/33/73/1000_F_778337308_Df9ifwfSsjaDwah7wFXRVHawSn8euos1.jpg",
+    image: "https://as1.ftcdn.net/v2/jpg/06/50/20/43/1000_F_650204326_4jVmCgI435BQP6Q0n2MP3vj228r0s32f.jpg",
     imageHint: "AI interview",
     liveLink: null,
     codeLink: "https://github.com/anurag9682/Mock-Mentor",
@@ -35,7 +35,7 @@ const projectsData = [
     description:
       "Uber Clone app using the MERN stack, with fully functional user authentication, ride request flow, real-time updates, and responsive UI design. 🚗",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
-    image: "https://placehold.co/600x400.png",
+    image: "https://t4.ftcdn.net/jpg/06/61/87/15/360_F_661871578_T92l9N6F7M7k22s1j3x2z6k6jJ5Z6a5a.jpg",
     imageHint: "ride hailing app",
     liveLink: null,
     codeLink: "https://github.com/anurag9682",
@@ -45,7 +45,7 @@ const projectsData = [
     description:
       "Responsive and visually appealing landing page for a coffee shop. ☕",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "https://placehold.co/600x400.png",
+    image: "https://t4.ftcdn.net/jpg/02/75/36/45/360_F_275364530_bsSj2bOqB3u5D6S3d2y27mXEbv3d3aAF.jpg",
     imageHint: "coffee shop",
     liveLink: "https://anurag9682.github.io/Responsive-Coffee-Shop-Landing-page/",
     codeLink: "https://github.com/anurag9682/Responsive-Coffee-Shop-Landing-page",
