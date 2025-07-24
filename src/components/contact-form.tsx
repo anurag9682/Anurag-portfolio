@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { SendHorizonal } from "lucide-react";
+import { Send, MessageCircle, Mail } from "lucide-react";
 import { useState } from "react";
 
 const formSchema = z.object({
@@ -46,14 +46,24 @@ export function ContactForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
     
-    console.log(values);
-    
+    const whatsappNumber = "+919628600016";
+    const gmailAddress = "aanurag.dy@gmail.com";
+
+    const whatsappMessage = `Hi, my name is ${values.name}. ${values.message} (My email: ${values.email})`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    const mailtoSubject = `Message from ${values.name}`;
+    const mailtoBody = `${values.message}\n\nFrom: ${values.name}\nEmail: ${values.email}`;
+    const mailtoUrl = `mailto:${gmailAddress}?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
+
+    // Open both links
+    window.open(whatsappUrl, '_blank');
+    window.open(mailtoUrl, '_blank');
+
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Ready to Send!",
+      description: "Your message is ready to be sent via WhatsApp and Email.",
     });
 
     form.reset();
@@ -103,8 +113,8 @@ export function ContactForm() {
           )}
         />
         <Button type="submit" className="w-full" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Submit"}
-          <SendHorizonal className="ml-2 h-4 w-4" />
+          {isSubmitting ? "Preparing..." : "Send Message"}
+          <Send className="ml-2 h-4 w-4" />
         </Button>
       </form>
     </Form>
