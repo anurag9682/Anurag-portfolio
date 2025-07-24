@@ -9,7 +9,6 @@ const contactDetails = [
     text: "aanurag.dy@gmail.com",
     href: "mailto:aanurag.dy@gmail.com",
   },
-  { icon: Phone, text: "+91-9628600016", href: "tel:+919628600016" },
   { icon: MapPin, text: "Kanpur Nagar, Uttar Pradesh, India" },
 ];
 
@@ -52,7 +51,7 @@ export function Contact() {
                 Contact Information
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Feel free to reach out via email, phone, or find me on social
+                Feel free to reach out via email or find me on social
                 media.
               </p>
             </div>
