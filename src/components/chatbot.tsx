@@ -25,9 +25,12 @@ export function Chatbot() {
 
   useEffect(() => {
     if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
+      const scrollableViewport = scrollAreaRef.current.querySelector('div[data-radix-scroll-area-viewport]');
+      if (scrollableViewport) {
+        scrollableViewport.scrollTop = scrollableViewport.scrollHeight;
+      }
     }
-  }, [messages]);
+  }, [messages, isLoading]);
 
   const handleSendMessage = async () => {
     if (inputValue.trim() === "") return;
@@ -85,7 +88,7 @@ export function Chatbot() {
                     <X className="h-4 w-4" />
                   </Button>
                 </CardHeader>
-                <CardContent className="flex-1 p-0">
+                <CardContent className="flex-1 p-0 overflow-hidden">
                     <ScrollArea className="h-full p-4" ref={scrollAreaRef}>
                         <div className="space-y-4">
                         {messages.map((message, index) => (
