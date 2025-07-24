@@ -12,6 +12,15 @@ import { Button } from "@/components/ui/button";
 
 const projectsData = [
   {
+    title: "Medical History Vault with QR Code",
+    description: "Built a full-stack healthcare web application that enables patients to upload and manage medical records securely. Each patient receives a unique QR code linked to their encrypted data, allowing doctors to access records after role-based authentication. Integrated AES encryption for file security and JWT for session management. Doctors can scan QR codes, view records with patient consent, and access emergency data like allergies and blood group instantly.",
+    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "JWT", "AES", "Cloudinary"],
+    image: "https://placehold.co/600x400.png",
+    imageHint: "healthcare security",
+    liveLink: null,
+    codeLink: "https://github.com/anurag9682",
+  },
+  {
     title: "Mock Mentor",
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
