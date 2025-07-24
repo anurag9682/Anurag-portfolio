@@ -20,14 +20,14 @@ const educationData = [
     institution: "S.V.M. Inter College, Pratapgarh",
     degree: "12th Grade",
     period: "2022",
-    details: "Score: 59.80%",
+    details: "Completed",
   },
   {
     icon: School,
     institution: "S.V.M. Inter College, Pratapgarh",
     degree: "10th Grade",
     period: "2020",
-    details: "Score: 74.40%",
+    details: "Completed",
   },
 ];
 
