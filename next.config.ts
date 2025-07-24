@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'as1.ftcdn.net',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };

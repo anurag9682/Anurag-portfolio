@@ -4,17 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 const achievementsData = [
   {
     icon: Trophy,
-    title: "200+ Problems Solved",
+    title: "200+ Problems Solved 🏆",
     description: "on LeetCode",
   },
   {
     icon: Star,
-    title: "4-Star Problem Solving",
+    title: "4-Star Problem Solving ⭐",
     description: "on HackerRank",
   },
   {
     icon: Users,
-    title: "Smart India Hackathon 2024",
+    title: "Smart India Hackathon 2024 💡",
     description: "Participated with a project on ML-based construction monitoring.",
   },
 ];

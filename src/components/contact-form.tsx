@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Send } from "lucide-react";
+import { SendHorizonal } from "lucide-react";
 import { useState } from "react";
 
 const formSchema = z.object({
@@ -104,7 +104,7 @@ export function ContactForm() {
         />
         <Button type="submit" className="w-full" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Submit"}
-          <Send className="ml-2 h-4 w-4" />
+          <SendHorizonal className="ml-2 h-4 w-4" />
         </Button>
       </form>
     </Form>

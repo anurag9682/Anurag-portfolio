@@ -16,14 +16,14 @@ export function Hero() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="order-2 flex flex-col items-center text-center md:order-1 md:items-start md:text-left">
             <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Anurag Dubey
+              Anurag Dubey 👋
             </h1>
             <h2 className="mb-4 text-2xl font-semibold text-muted-foreground md:text-3xl">
               MERN Stack Developer | <AnimatedKeywords keywords={keywords} />
             </h2>
             <p className="mb-8 max-w-2xl text-base text-muted-foreground md:text-lg">
               Building innovative full-stack solutions with passion and
-              precision.
+              precision. 🚀
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg">
@@ -43,7 +43,7 @@ export function Hero() {
           <div className="order-1 flex justify-center md:order-2">
             <div className="relative h-64 w-64 md:h-96 md:w-96">
               <Image
-                src="https://placehold.co/400x400.png"
+                src="https://as1.ftcdn.net/v2/jpg/06/60/44/92/1000_F_660449277_KTdoBU1B1gWjwjKPlsCwWgnxzOoorB5b.jpg"
                 alt="Anurag Dubey"
                 width={400}
                 height={400}

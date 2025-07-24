@@ -4,15 +4,15 @@ import { Card, CardContent } from "@/components/ui/card";
 const activities = [
   {
     icon: HeartHandshake,
-    text: "Volunteered in college tech fests and managed events.",
+    text: "Volunteered in college tech fests and managed events. 🤝",
   },
   {
     icon: Swords,
-    text: "Active participant in online coding competitions.",
+    text: "Active participant in online coding competitions. ⚔️",
   },
   {
     icon: Lightbulb,
-    text: "Exploring new tech and keeping up with innovation.",
+    text: "Exploring new tech and keeping up with innovation. 💡",
   },
 ];
 
