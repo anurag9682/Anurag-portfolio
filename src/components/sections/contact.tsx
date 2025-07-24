@@ -26,7 +26,7 @@ const socialLinks = [
     },
     {
       icon: Code,
-      href: "https://leetcode.com/aanurag_dy/",
+      href: "https://leetcode.com/u/anuragdubeyy/",
       label: "LeetCode",
     },
   ];
