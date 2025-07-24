@@ -6,6 +6,7 @@ import {
   Server,
   Wind,
   Code,
+  User,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -30,11 +31,14 @@ export function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              About Me
-            </h2>
+            <div className="flex items-center gap-3">
+              <User className="h-8 w-8 text-primary" />
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                About Me
+              </h2>
+            </div>
             <p className="mt-4 text-lg text-muted-foreground">
-              I’m a passionate web developer currently pursuing a B.C.A. at
+              I’m a passionate web developer 💻 currently pursuing a B.C.A. at
               Pranveer Singh Institute of Technology, with hands-on experience
               in building full-stack web applications using the MERN stack. I
               love solving problems on platforms like LeetCode and HackerRank
@@ -50,13 +54,13 @@ export function About() {
             </div>
           </div>
           <div className="rounded-xl bg-background p-6 shadow-lg">
-            <h3 className="mb-4 text-xl font-semibold">Key Skills</h3>
+            <h3 className="mb-4 text-xl font-semibold">Key Skills 🛠️</h3>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <Badge
                   key={skill.name}
                   variant="secondary"
-                  className="flex items-center gap-2 px-3 py-1 text-sm"
+                  className="flex items-center gap-2 px-3 py-1 text-sm transition-transform hover:scale-110 hover:shadow-md"
                 >
                   <skill.icon className="h-4 w-4 text-primary" />
                   {skill.name}

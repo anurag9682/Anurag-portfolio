@@ -42,16 +42,16 @@ export function Skills() {
     <section id="skills" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Technical Skills
+          Technical Skills 💻
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skillsData.map((category) => (
             <Card
               key={category.category}
-              className="transition-shadow duration-300 hover:shadow-lg"
+              className="transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <CardHeader className="flex flex-row items-center gap-4">
-                <category.icon className="h-8 w-8 text-primary" />
+                <category.icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover:rotate-12" />
                 <CardTitle className="font-headline text-2xl">
                   {category.category}
                 </CardTitle>

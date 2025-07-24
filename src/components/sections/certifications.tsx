@@ -26,11 +26,13 @@ export function Certifications() {
     <section id="certifications" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Certificates & Trainings
+          Certificates & Trainings 📜
         </h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 perspective-1000">
           {certificationsData.map((cert) => (
-            <CertificationCard key={cert.title} {...cert} />
+            <div key={cert.title} className="transform-style-3d transition-transform duration-500 hover:[transform:rotateY(15deg)]">
+              <CertificationCard {...cert} />
+            </div>
           ))}
         </div>
       </div>

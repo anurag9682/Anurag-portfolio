@@ -10,11 +10,15 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[calc(100dvh-5rem)] w-full items-center justify-center bg-background py-24"
+      className="relative flex min-h-[calc(100dvh-5rem)] w-full items-center justify-center overflow-hidden bg-background py-24"
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+      </div>
+      <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="order-2 flex flex-col items-center text-center md:order-1 md:items-start md:text-left">
+          <div className="order-2 flex animate-fade-in-up flex-col items-center text-center md:order-1 md:items-start md:text-left">
             <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Anurag Dubey 👋
             </h1>
@@ -35,20 +39,20 @@ export function Hero() {
               <Button asChild variant="secondary" size="lg">
                 <Link href="#contact">
                   Let's Connect
-                  <ArrowDown className="ml-2 h-5 w-5" />
+                  <ArrowDown className="ml-2 h-5 w-5 animate-bounce" />
                 </Link>
               </Button>
             </div>
           </div>
           <div className="order-1 flex justify-center md:order-2">
-            <div className="relative h-64 w-64 md:h-96 md:w-96">
+            <div className="relative h-64 w-64 md:h-96 md:w-96 perspective-1000">
               <Image
-                src="https://t4.ftcdn.net/jpg/07/78/33/73/240_F_778337308_Df9ifwfSsjaDwah7wFXRVHawSn8euos1.jpg"
+                src="https://as1.ftcdn.net/v2/jpg/06/60/44/92/1000_F_660449277_KTdoBU1B1gWjwjKPlsCwWgnxzOoorB5b.jpg"
                 alt="Anurag Dubey"
                 width={400}
                 height={400}
                 priority
-                className="rounded-full border-4 border-primary/20 object-cover shadow-lg"
+                className="rounded-full border-4 border-primary/20 object-cover shadow-lg transition-transform duration-500 ease-in-out hover:[transform:rotateY(10deg)_rotateX(5deg)_scale(1.05)]"
                 data-ai-hint="profile picture"
               />
               <div className="absolute inset-0 rounded-full border-4 border-primary ring-4 ring-primary/20 ring-offset-4 ring-offset-background animate-pulse"></div>

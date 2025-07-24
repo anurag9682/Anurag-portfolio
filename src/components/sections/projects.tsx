@@ -15,9 +15,9 @@ const projectsData = [
     title: "Mock Mentor",
     date: "Nov 2024",
     description:
-      "AI-powered mock interview web app that provides real-time feedback and analysis.",
+      "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
-    image: "https://as1.ftcdn.net/v2/jpg/07/87/42/10/1000_F_787421047_18Iu2b2e1m1tN3g3x5i2v2IF1l4sB2h7.jpg",
+    image: "/mock-mentor.png",
     imageHint: "AI interview",
     liveLink: null,
     codeLink: "https://github.com/a-dubey/Mock-Mentor",
@@ -26,7 +26,7 @@ const projectsData = [
     title: "Coffee Shop Landing Page",
     date: "Aug 2024",
     description:
-      "Responsive and visually appealing landing page for a coffee shop.",
+      "Responsive and visually appealing landing page for a coffee shop. ☕",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     imageHint: "coffee shop",
@@ -40,13 +40,13 @@ export function Projects() {
     <section id="projects" className="bg-muted py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          My Projects
+          My Projects 🚀
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+        <div className="grid gap-8 md:grid-cols-2 lg:gap-12 perspective-1000">
           {projectsData.map((project) => (
+            <div key={project.title} className="transform-style-3d transition-transform duration-500 hover:[transform:rotateY(-15deg)]">
             <Card
-              key={project.title}
-              className="overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+              className="group h-full overflow-hidden transition-all duration-300 hover:shadow-2xl"
             >
               <CardHeader className="p-0">
                 <div className="relative aspect-video overflow-hidden">
@@ -54,7 +54,7 @@ export function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                     data-ai-hint={project.imageHint}
                   />
                 </div>
@@ -102,6 +102,7 @@ export function Projects() {
                 )}
               </CardFooter>
             </Card>
+            </div>
           ))}
         </div>
       </div>
