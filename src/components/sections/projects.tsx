@@ -20,7 +20,18 @@ const projectsData = [
     image: "https://as2.ftcdn.net/v2/jpg/07/78/33/73/1000_F_778337308_Df9ifwfSsjaDwah7wFXRVHawSn8euos1.jpg",
     imageHint: "AI interview",
     liveLink: null,
-    codeLink: "https://github.com/a-dubey/Mock-Mentor",
+    codeLink: "https://github.com/anurag9682/Mock-Mentor",
+  },
+  {
+    title: "Uber Clone",
+    date: "Dec 2024",
+    description:
+      "Uber Clone app using the MERN stack, with fully functional user authentication, ride request flow, real-time updates, and responsive UI design. 🚗",
+    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+    image: "https://placehold.co/600x400.png",
+    imageHint: "ride hailing app",
+    liveLink: null,
+    codeLink: "https://github.com/anurag9682",
   },
   {
     title: "Coffee Shop Landing Page",
@@ -31,7 +42,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     imageHint: "coffee shop",
     liveLink: "https://a-dubey.github.io/Coffee-Shop-Landing-Page/",
-    codeLink: "https://github.com/a-dubey/Coffee-Shop-Landing-Page",
+    codeLink: "https://github.com/anurag9682/Coffee-Shop-Landing-Page",
   },
 ];
 
