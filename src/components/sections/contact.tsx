@@ -16,12 +16,12 @@ const contactDetails = [
 const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/a-dubey",
+      href: "https://github.com/anurag9682",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/anurag-dubey-2ba37a285/",
+      href: "https://www.linkedin.com/in/anuragdubeyy/",
       label: "LinkedIn",
     },
     {
