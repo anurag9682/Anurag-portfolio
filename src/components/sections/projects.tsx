@@ -41,14 +41,14 @@ const projectsData = [
     codeLink: "https://github.com/anurag9682",
   },
   {
-    title: "Coffee Shop Landing Page",
+    title: "Responsive Coffee Shop Landing Page",
     description:
       "Responsive and visually appealing landing page for a coffee shop. ☕",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "https://placehold.co/600x400.png",
     imageHint: "coffee shop",
-    liveLink: "https://a-dubey.github.io/Coffee-Shop-Landing-Page/",
-    codeLink: "https://github.com/anurag9682/Coffee-Shop-Landing-Page",
+    liveLink: "https://anurag9682.github.io/Responsive-Coffee-Shop-Landing-page/",
+    codeLink: "https://github.com/anurag9682/Responsive-Coffee-Shop-Landing-page",
   },
 ];
 
