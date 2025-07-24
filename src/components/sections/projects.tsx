@@ -17,7 +17,7 @@ const projectsData = [
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis.",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
-    image: "https://placehold.co/600x400.png",
+    image: "https://as1.ftcdn.net/v2/jpg/06/60/44/92/1000_F_660449277_KTdoBU1B1gWjwjKPlsCwWgnxzOoorB5b.jpg",
     imageHint: "AI interview",
     liveLink: null,
     codeLink: "https://github.com/a-dubey/Mock-Mentor",
