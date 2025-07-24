@@ -25,7 +25,7 @@ const projectsData = [
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
-    image: "https://as1.ftcdn.net/v2/jpg/06/50/20/43/1000_F_650204326_4jVmCgI435BQP6Q0n2MP3vj228r0s32f.jpg",
+    image: "https://t4.ftcdn.net/jpg/08/02/61/93/360_F_802619373_2J2OS25aV3nN2e55p2OO2l3hR1s5c5rI.jpg",
     imageHint: "AI interview",
     liveLink: null,
     codeLink: "https://github.com/anurag9682/Mock-Mentor",
@@ -72,7 +72,7 @@ export function Projects() {
               <CardHeader className="p-0">
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src={project.image}
+                    src={project.image || 'https://placehold.co/600x400.png'}
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
