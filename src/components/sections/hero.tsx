@@ -47,7 +47,7 @@ export function Hero() {
           <div className="order-1 flex justify-center md:order-2">
             <div className="relative h-64 w-64 md:h-96 md:w-96 perspective-1000">
               <Image
-                src="https://as1.ftcdn.net/v2/jpg/06/60/44/92/1000_F_660449277_KTdoBU1B1gWjwjKPlsCwWgnxzOoorB5b.jpg"
+                src="https://as2.ftcdn.net/v2/jpg/07/78/33/73/1000_F_778337308_Df9ifwfSsjaDwah7wFXRVHawSn8euos1.jpg"
                 alt="Anurag Dubey"
                 width={400}
                 height={400}
