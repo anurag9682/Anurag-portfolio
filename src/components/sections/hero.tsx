@@ -1,0 +1,61 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowDown, FileText } from "lucide-react";
+import { AnimatedKeywords } from "@/components/animated-keywords";
+
+export function Hero() {
+  const keywords = ["React Developer", "AI Enthusiast", "Competitive Coder"];
+
+  return (
+    <section
+      id="home"
+      className="relative flex min-h-[calc(100dvh-5rem)] w-full items-center justify-center bg-background py-24"
+    >
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="order-2 flex flex-col items-center text-center md:order-1 md:items-start md:text-left">
+            <h1 className="mb-4 font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Anurag Dubey
+            </h1>
+            <h2 className="mb-4 text-2xl font-semibold text-muted-foreground md:text-3xl">
+              MERN Stack Developer | <AnimatedKeywords keywords={keywords} />
+            </h2>
+            <p className="mb-8 max-w-2xl text-base text-muted-foreground md:text-lg">
+              Building innovative full-stack solutions with passion and
+              precision.
+            </p>
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Button asChild size="lg">
+                <a href="/AnuragDubey_Resume.pdf" download>
+                  <FileText className="mr-2 h-5 w-5" />
+                  View Resume
+                </a>
+              </Button>
+              <Button asChild variant="secondary" size="lg">
+                <Link href="#contact">
+                  Let's Connect
+                  <ArrowDown className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+          <div className="order-1 flex justify-center md:order-2">
+            <div className="relative h-64 w-64 md:h-96 md:w-96">
+              <Image
+                src="https://placehold.co/400x400.png"
+                alt="Anurag Dubey"
+                width={400}
+                height={400}
+                priority
+                className="rounded-full border-4 border-primary/20 object-cover shadow-lg"
+                data-ai-hint="profile picture"
+              />
+              <div className="absolute inset-0 rounded-full border-4 border-primary ring-4 ring-primary/20 ring-offset-4 ring-offset-background animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
