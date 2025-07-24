@@ -27,8 +27,12 @@ const skills = [
 
 export function About() {
   return (
-    <section id="about" className="bg-muted py-24 sm:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="about" className="relative bg-background py-24 sm:py-32">
+      <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        </div>
+      <div className="container relative mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
             <div className="flex items-center gap-3">
@@ -53,7 +57,7 @@ export function About() {
               </Button>
             </div>
           </div>
-          <div className="rounded-xl bg-background p-6 shadow-lg">
+          <div className="rounded-xl bg-card p-6 shadow-lg">
             <h3 className="mb-4 text-xl font-semibold">Key Skills 🛠️</h3>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (

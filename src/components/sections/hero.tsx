@@ -12,9 +12,9 @@ export function Hero() {
       id="home"
       className="relative flex min-h-[calc(100dvh-5rem)] w-full items-center justify-center overflow-hidden bg-background py-24"
     >
-      <div className="absolute inset-0 z-0 opacity-20">
-        <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-        <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+      <div aria-hidden="true" className="absolute inset-0 z-0 opacity-40 dark:opacity-20">
+        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">

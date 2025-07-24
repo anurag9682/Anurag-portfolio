@@ -17,7 +17,7 @@ const projectsData = [
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
-    image: "/mock-mentor.png",
+    image: "https://as2.ftcdn.net/v2/jpg/07/78/33/73/1000_F_778337308_Df9ifwfSsjaDwah7wFXRVHawSn8euos1.jpg",
     imageHint: "AI interview",
     liveLink: null,
     codeLink: "https://github.com/a-dubey/Mock-Mentor",
@@ -37,8 +37,12 @@ const projectsData = [
 
 export function Projects() {
   return (
-    <section id="projects" className="bg-muted py-24 sm:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="projects" className="relative bg-background py-24 sm:py-32">
+       <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        </div>
+      <div className="container relative mx-auto px-4 md:px-6">
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           My Projects 🚀
         </h2>

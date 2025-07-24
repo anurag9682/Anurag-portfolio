@@ -16,14 +16,16 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <About />
-        <Education />
-        <Projects />
-        <Certifications />
-        <Achievements />
-        <Skills />
-        <ExtraCurricular />
-        <Contact />
+        <div className="space-y-0">
+          <About />
+          <Education />
+          <Projects />
+          <Certifications />
+          <Achievements />
+          <Skills />
+          <ExtraCurricular />
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>

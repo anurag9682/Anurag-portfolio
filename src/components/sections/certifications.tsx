@@ -23,8 +23,12 @@ const certificationsData = [
 
 export function Certifications() {
   return (
-    <section id="certifications" className="bg-background py-24 sm:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="certifications" className="relative bg-background py-24 sm:py-32">
+       <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+            <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        </div>
+      <div className="container relative mx-auto px-4 md:px-6">
         <h2 className="mb-12 text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Certificates & Trainings 📜
         </h2>
