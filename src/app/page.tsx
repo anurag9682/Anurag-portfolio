@@ -9,6 +9,7 @@ import { Skills } from "@/components/sections/skills";
 import { ExtraCurricular } from "@/components/sections/extra-curricular";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/shared/footer";
+import { Chatbot } from "@/components/chatbot";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
