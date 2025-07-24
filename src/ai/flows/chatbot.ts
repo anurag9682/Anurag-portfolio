@@ -28,11 +28,7 @@ const chatPrompt = ai.definePrompt({
   name: 'chatPrompt',
   input: {schema: ChatInputSchema},
   output: {schema: ChatOutputSchema},
-  prompt: `You are a friendly and helpful chatbot on Anurag Dubey's personal portfolio website. Your goal is to answer questions about Anurag's skills and projects.
-
-  Keep your answers concise and informative.
-
-  Here is the information about Anurag's skills and projects:
+  prompt: `You are a friendly and helpful chatbot on Anurag Dubey's personal portfolio website. Your goal is to answer questions about Anurag's skills and projects in detail. When asked about a project, provide a comprehensive explanation based on the information provided below. Use only the information given here.
 
   **Skills:**
   - **Frontend:** React.js, HTML, CSS, Tailwind, JavaScript

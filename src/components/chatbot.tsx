@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { MessageCircle, Send, X, Bot, User, Loader } from "lucide-react";
+import { Send, X, Bot, User, Loader } from "lucide-react";
 import { chat } from "@/ai/flows/chatbot";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { AnimatePresence, motion } from "framer-motion";
@@ -160,7 +160,7 @@ export function Chatbot() {
           className="rounded-full h-16 w-16 shadow-lg"
           size="icon"
         >
-          {isOpen ? <X className="h-8 w-8" /> : <MessageCircle className="h-8 w-8" />}
+          {isOpen ? <X className="h-8 w-8" /> : <Bot className="h-8 w-8" />}
         </Button>
       </div>
     </>
