@@ -13,7 +13,6 @@ import { Button } from "@/components/ui/button";
 const projectsData = [
   {
     title: "Mock Mentor",
-    date: "Nov 2024",
     description:
       "AI-powered mock interview web app that provides real-time feedback and analysis. 🤖",
     tech: ["React.js", "JSX", "Node.js", "Tailwind CSS", "Google API"],
@@ -24,7 +23,6 @@ const projectsData = [
   },
   {
     title: "Uber Clone",
-    date: "Dec 2024",
     description:
       "Uber Clone app using the MERN stack, with fully functional user authentication, ride request flow, real-time updates, and responsive UI design. 🚗",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
@@ -35,7 +33,6 @@ const projectsData = [
   },
   {
     title: "Coffee Shop Landing Page",
-    date: "Aug 2024",
     description:
       "Responsive and visually appealing landing page for a coffee shop. ☕",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -79,7 +76,6 @@ export function Projects() {
                   <h3 className="font-headline text-xl font-bold">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{project.date}</p>
                 </div>
                 <p className="mb-4 text-muted-foreground">
                   {project.description}
