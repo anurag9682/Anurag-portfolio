@@ -2,6 +2,36 @@ import { CertificationCard } from "@/components/certification-card";
 
 const certificationsData = [
   {
+    title: "AI/ML Geodata Analysis",
+    issuer: "ISRO",
+    date: "2024",
+    skills: ["Geodata", "Machine Learning", "Remote Sensing"],
+  },
+  {
+    title: "Career Essentials in Generative AI",
+    issuer: "Microsoft & LinkedIn",
+    date: "2024",
+    skills: ["Generative AI", "LinkedIn", "Career Growth"],
+  },
+  {
+    title: "Full Stack Development",
+    issuer: "Infosys",
+    date: "2024",
+    skills: ["Full Stack", "Springboard", "Web Development"],
+  },
+  {
+    title: "Problem Solving (Intermediate)",
+    issuer: "HackerRank",
+    date: "2024",
+    skills: ["Algorithms", "Data Structures", "Problem Solving"],
+  },
+  {
+    title: "Python Fundamentals",
+    issuer: "Infosys",
+    date: "2024",
+    skills: ["Python", "Core Concepts", "Programming"],
+  },
+  {
     title: "Git & GitHub Essentials",
     issuer: "IIT Kanpur",
     date: "Nov 2024",
