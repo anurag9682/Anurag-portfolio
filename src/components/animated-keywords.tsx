@@ -23,7 +23,7 @@ export function AnimatedKeywords({ keywords }: { keywords: string[] }) {
         }
       } catch (error) {
         console.error("Failed to fetch animated keywords:", error);
-        setAnimatedKeywords(keywords); // Fallback on error
+        setAnimatedKeywords(keywords); // Fallback on error...
       } finally {
         setIsLoading(false);
       }
