@@ -19,7 +19,7 @@ export function AnimatedKeywords({ keywords }: { keywords: string[] }) {
         if (result.animatedKeywords && result.animatedKeywords.length > 0) {
           setAnimatedKeywords(result.animatedKeywords);
         } else {
-          setAnimatedKeywords(keywords); // Fallback
+          setAnimatedKeywords(keywords); // Fallback...
         }
       } catch (error) {
         console.error("Failed to fetch animated keywords:", error);
